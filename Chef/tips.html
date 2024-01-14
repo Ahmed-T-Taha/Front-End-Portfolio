@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Chef's Choice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db54c67df5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div style="margin: 0px; background-color: black"></div>
+      <nav>
+        <ul>
+          <li style="padding: 0px">
+            <a href="home.html" style="padding: 0px"
+              ><img src="img/logo.jpg" height="50px"
+            /></a>
+          </li>
+
+          <li>
+            Recipes <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="brownies.html">Brownies</a></li>
+            </ul>
+          </li>
+
+          <li>
+            Hungry For More? <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="tips.html">Tips & Tricks</a></li>
+              <li>
+                Interact With Us <i class="fa-solid fa-caret-right"></i>
+                <ul>
+                  <li><a href="quiz.html">Fun Quiz</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li id="header-account">
+            Account <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">Signup</a></li>
+            </ul>
+          </li>
+
+          <li id="header-signout"></li>
+        </ul>
+        <div style="clear: both"></div>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <img src="img/side.jpg" class="tips-image" />
+
+        <div>
+          <h1 style="margin-left: 10px">
+            Here are some tips for an easier life in the kitchen:
+          </h1>
+          <table>
+            <tr>
+              <td><button onclick="collapse()">Collapse All</button></td>
+              <td><button onclick="expand()">Expand All</button></td>
+            </tr>
+          </table>
+          <details>
+            <summary>Read the recipe</summary>
+            <p>
+              Read the recipe thoroughly before starting to cook. This will help
+              you avoid mistakes and ensure that you have all the necessary
+              ingredients. If you're new to cooking, start with simple recipes
+              and work your way up to more complex ones.
+            </p>
+          </details>
+
+          <details>
+            <summary>Use fresh ingredients</summary>
+            <p>
+              Use fresh ingredients whenever possible. They will taste better
+              and be more nutritious. Shop at your local farmers' market for the
+              freshest produce.
+            </p>
+          </details>
+
+          <details>
+            <summary>Organize your ingredients</summary>
+            <p>
+              Before you start cooking, gather all the ingredients you need and
+              organize them in order of use. This will help you cook more
+              efficiently and avoid missing any ingredients.
+            </p>
+          </details>
+
+          <details>
+            <summary>Season your food</summary>
+            <p>
+              Season your food with salt and pepper to enhance the flavor. Taste
+              as you go and adjust the seasoning as needed. Don't be afraid to
+              experiment with different herbs and spices to find your favorite
+              flavor combinations.
+            </p>
+          </details>
+
+          <details>
+            <summary>Use the right cookware</summary>
+            <p>
+              Use the right cookware for the job. Non-stick pans are great for
+              eggs, while cast iron pans are perfect for searing meat. Stainless
+              steel pans are great for sautéing vegetables.
+            </p>
+          </details>
+
+          <details>
+            <summary>Taste as you go</summary>
+            <p>
+              Taste your food as you cook to ensure that it's seasoned properly
+              and to adjust the seasoning as needed. This will help you develop
+              your palate and become a better cook.
+            </p>
+          </details>
+
+          <details>
+            <summary>Clean as you go</summary>
+            <p>
+              Clean as you go to keep your kitchen organized and make cleanup
+              easier. Wash dishes and utensils as you finish using them and wipe
+              down counters and stovetops as needed.
+            </p>
+          </details>
+
+          <details>
+            <summary>Don't be afraid to experiment</summary>
+            <p>
+              Don't be afraid to experiment with new recipes and ingredients.
+              You might discover a new favorite dish! Try substituting different
+              vegetables or proteins in your favorite recipes.
+            </p>
+          </details>
+
+          <details>
+            <summary>Have fun!</summary>
+            <p>
+              Cooking should be fun and enjoyable. Don't stress too much about
+              making mistakes. Just have fun and enjoy the process! Invite
+              friends and family over to share your creations.
+            </p>
+          </details>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Cooking Quote of the Day</h3>
+      <p id="footer-quote"></p>
+    </footer>
+    <script>
+      setAccount();
+      addQuote();
+    </script>
+  </body>
+</html>

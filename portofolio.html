@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Portfolio</title>
+
+    <style>
+      .jumbotron {
+        color: white;
+        border-radius: 0%;
+      }
+
+      #skills {
+        margin: 50px;
+        list-style-position: inside;
+      }
+
+      #contact {
+        margin-top: 50px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div id="home" class="jumbotron bg-dark">
+      <div class="container">
+        <div class="row">
+          <!-- Part 1: Text -->
+          <div class="col-sm-8">
+            <p class="lead">Hello, my name is</p>
+            <h1 class="display-4">Ahmed Taha</h1>
+            <p class="lead">
+              I am a Software Engineering student studying at Faculty of
+              Engineering, Ain Shams University, and I am passionate about
+              software development.
+            </p>
+          </div>
+
+          <!-- Part 2: Image -->
+          <div class="col-sm-4" style="text-align: center">
+            <img src="img/profile.jpeg" height="250" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+      <h1 class="text-center">Skills Overview</h1>
+      <div class="container">
+        <h4>Proficient in:</h4>
+        <ul style="text-align: left">
+          <li>Application development using C++ and Java</li>
+          <li>Front-End Web development using HTML, CSS and Javascript</li>
+          <li>Back-End Web development using asp.net framework in C#</li>
+          <li>AI and Machine Learning using Python</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="container text-center">
+      <h1>Projects</h1>
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="card mx-auto" style="width: 18rem">
+            <img class="card-img-top" src="img\chef.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">The Chef's Choice</h5>
+              <p class="card-text">A website for recipes and cooking tips.</p>
+              <a href="Chef/home.html" class="btn btn-primary" target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card mx-auto" style="width: 18rem">
+            <img class="card-img-top" src="img\healthy.png" />
+            <div class="card-body">
+              <h5 class="card-title">Healthy</h5>
+              <p class="card-text">
+                A website for a company based on healthy food.
+              </p>
+              <a
+                href="Healthy/healthy.html"
+                class="btn btn-primary"
+                target="_blank"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card mx-auto" style="width: 18rem">
+            <br />
+            <i class="card-img-top fas fa-spinner fa-10x"></i>
+            <div class="card-body">
+              <h5 class="card-title">WIP</h5>
+              <p class="card-text">Coming Soon!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="contact" class="text-center bg-dark">
+      <h1>Contact Me</h1>
+      <p><i class="fas fa-phone-alt"></i> 10000</p>
+      <p><i class="fas fa-envelope"></i> ahmed@gmail.com</p>
+      <p>
+        <i class="fas fa-map-marker-alt"></i> Address: New Cairo, Cairo - Egypt
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-2.0.0.js"
+      integrity="sha256-iW43nTNM8LFseNmWKhV5FHFW1KcjVQMvzg3l9nPU4oc="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

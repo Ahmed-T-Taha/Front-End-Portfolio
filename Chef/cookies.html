@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Chef's Choice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db54c67df5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div style="margin: 0px; background-color: black"></div>
+      <nav>
+        <ul>
+          <li style="padding: 0px">
+            <a href="home.html" style="padding: 0px"
+              ><img src="img/logo.jpg" height="50px"
+            /></a>
+          </li>
+
+          <li>
+            Recipes <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="brownies.html">Brownies</a></li>
+            </ul>
+          </li>
+
+          <li>
+            Hungry For More? <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="tips.html">Tips & Tricks</a></li>
+              <li>
+                Interact With Us <i class="fa-solid fa-caret-right"></i>
+                <ul>
+                  <li><a href="quiz.html">Fun Quiz</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li id="header-account">
+            Account <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">Signup</a></li>
+            </ul>
+          </li>
+
+          <li id="header-signout"></li>
+        </ul>
+        <div style="clear: both"></div>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <h1>This recipe is courtesy of Tasty.<br />Check them out here!</h1>
+        <iframe
+          width="100%"
+          height="300px"
+          src="https://www.youtube.com/embed/h4CyhQqAPpk?si=LrY5hFwTNqLf5KPz&amp;start=175"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </aside>
+
+      <div>
+        <div style="margin-left: 175px">
+          <h1>2-Hour Chocolate Chip Cookies</h1>
+          <table>
+            <tr>
+              <td><button onclick="setSize('small')">Small Text</button></td>
+              <td><button onclick="setSize('medium')">Normal Text</button></td>
+              <td><button onclick="setSize('large')">Large Text</button></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="ingredients-section">
+          <h3>INGREDIENTS:</h3>
+          <ul>
+            <li><i class="fa-solid fa-cookie"></i> ½ cup granulated sugar</li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> ¾ cup light brown sugar, packed
+            </li>
+            <li><i class="fa-solid fa-cookie"></i> 1 teaspoon kosher salt</li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> ½ cup (1 stick) unsalted
+              butter, melted
+            </li>
+            <li><i class="fa-solid fa-cookie"></i> 1 large egg</li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> 1 teaspoon vanilla extract
+            </li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> 1¼ cups all-purpose flour
+            </li>
+            <li><i class="fa-solid fa-cookie"></i> ½ teaspoon baking soda</li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> 4 ounces milk or semi-sweet
+              chocolate chunks
+            </li>
+            <li>
+              <i class="fa-solid fa-cookie"></i> 4 ounces dark chocolate chunks
+            </li>
+          </ul>
+        </div>
+
+        <div class="preparation-section">
+          <h3>PREPARATION:</h3>
+          <ol>
+            <li>
+              In a large bowl, whisk together the granulated and brown sugar,
+              salt, and butter until a paste forms with no lumps.
+            </li>
+            <li>
+              Whisk in the egg and vanilla, beating until light ribbons fall off
+              the whisk and remain for a short while before dissolving.
+            </li>
+            <li>
+              Sift in the flour and baking soda, then fold with a spatula until
+              just incorporated. (Be careful not to overmix, which will cause
+              the gluten in the flour to toughen, resulting in cakier cookies).
+            </li>
+            <li>Fold in the milk and dark chocolate chunks.</li>
+            <li>
+              Chill the dough for 2 hours, or, for a more intense toffee-like
+              flavor and deeper color, overnight. The longer the dough rests,
+              the more complex its flavor will be.
+            </li>
+            <li>
+              Preheat the oven to 350°F (180°C). Line 2 baking sheets with
+              parchment paper.
+            </li>
+            <li>
+              Using a 2½-ounce ice cream scoop or a ⅓ cup measure, scoop the
+              dough onto the prepared baking sheets, leaving at least 4 inches
+              (10 cm) of space between each cookie and 2 inches (5 cm) of space
+              from the edges of the pan so that the cookies can spread evenly. A
+              half sheet pan should fit no more than 6 cookies.
+            </li>
+            <li>
+              Bake for 12-15 minutes, or until the edges have started to lightly
+              brown. Let cool completely before serving.
+            </li>
+            <li>Enjoy!</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Cooking Quote of the Day</h3>
+      <p id="footer-quote"></p>
+    </footer>
+    <script>
+      setAccount();
+      addQuote();
+    </script>
+  </body>
+</html>

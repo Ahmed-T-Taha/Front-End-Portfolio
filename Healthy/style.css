@@ -1,0 +1,29 @@
+.jumbotron {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+#section3 , #section5 {
+    text-align: center;
+    margin: 100px;
+}
+
+#products {
+    background-color: #5c6447;
+    text-align: center;
+    padding: 80px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #5c6447;
+    padding: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#weight {
+    text-align: center;
+    margin: 100px;
+}

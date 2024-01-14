@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Chef's Choice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db54c67df5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div style="margin: 0px; background-color: black"></div>
+      <nav>
+        <ul>
+          <li style="padding: 0px">
+            <a href="home.html" style="padding: 0px"
+              ><img src="img/logo.jpg" height="50px"
+            /></a>
+          </li>
+
+          <li>
+            Recipes <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="brownies.html">Brownies</a></li>
+            </ul>
+          </li>
+
+          <li>
+            Hungry For More? <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="tips.html">Tips & Tricks</a></li>
+              <li>
+                Interact With Us <i class="fa-solid fa-caret-right"></i>
+                <ul>
+                  <li><a href="quiz.html">Fun Quiz</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li id="header-account">
+            Account <i class="fa-solid fa-caret-down"></i>
+            <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">Signup</a></li>
+            </ul>
+          </li>
+
+          <li id="header-signout"></li>
+        </ul>
+        <div style="clear: both"></div>
+      </nav>
+    </header>
+
+    <main>
+      <form class="quiz">
+        <h1>Take The Food Knowledge Quiz</h1>
+        <fieldset>
+          <legend>Cuisines of the World</legend>
+          <p>1. Which country is the origin of the dish paella?</p>
+          <select id="q0">
+            <option value="A">A. Portugal</option>
+            <option value="B">B. Spain</option>
+            <option value="C">C. Italy</option>
+            <option value="D">D. France</option>
+          </select>
+          <p>
+            2. What is the name of the thin, round, unleavened bread that is
+            commonly eaten in India?
+          </p>
+          <select id="q1">
+            <option value="A">A. Naan</option>
+            <option value="B">B. Chapati</option>
+            <option value="C">C. Pita</option>
+            <option value="D">D. Paratha</option>
+          </select>
+          <p>3. What is the main ingredient of the Japanese soup miso?</p>
+          <select id="q2">
+            <option value="A">A. Soy sauce</option>
+            <option value="B">B. Tofu</option>
+            <option value="C">C. Seaweed</option>
+            <option value="D">D. Soybean paste</option>
+          </select>
+          <p>
+            4. What is the national dish of Brazil, made with black beans, pork,
+            and beef?
+          </p>
+          <select id="q3">
+            <option value="A">A. Feijoada</option>
+            <option value="B">B. Empanada</option>
+            <option value="C">C. Ceviche</option>
+            <option value="D">D. Churrasco</option>
+          </select>
+          <p>
+            5. What is the name of the spicy sauce made from red peppers,
+            garlic, and vinegar that is popular in North Africa and the Middle
+            East?
+          </p>
+          <select id="q4">
+            <option value="A">A. Harissa</option>
+            <option value="B">B. Tahini</option>
+            <option value="C">C. Hummus</option>
+            <option value="D">D. Baba ganoush</option>
+          </select>
+        </fieldset>
+        <br /><br />
+        <fieldset>
+          <legend>Cooking Techniques</legend>
+          <p>
+            6. What is the term for cooking food in a small amount of fat over
+            high heat, while stirring or tossing constantly?
+          </p>
+          <select id="q5">
+            <option value="A">A. Sautéing</option>
+            <option value="B">B. Frying</option>
+            <option value="C">C. Stir-frying</option>
+            <option value="D">D. Roasting</option>
+          </select>
+          <p>
+            7. What is the term for cooking food in liquid at a temperature
+            below the boiling point?
+          </p>
+          <select id="q6">
+            <option value="A">A. Simmering</option>
+            <option value="B">B. Steaming</option>
+            <option value="C">C. Poaching</option>
+            <option value="D">D. Braising</option>
+          </select>
+          <p>
+            8. What is the term for coating food with flour, egg, and
+            breadcrumbs before frying or baking?
+          </p>
+          <select id="q7">
+            <option value="A">A. Breading</option>
+            <option value="B">B. Dredging</option>
+            <option value="C">C. Marinating</option>
+            <option value="D">D. Glazing</option>
+          </select>
+          <p>
+            9. What is the term for cutting food into thin, matchstick-like
+            strips?
+          </p>
+          <select id="q8">
+            <option value="A">A. Julienne</option>
+            <option value="B">B. Brunoise</option>
+            <option value="C">C. Chiffonade</option>
+            <option value="D">D. Mince</option>
+          </select>
+          <p>
+            10. What is the term for adding a small amount of liquid to a hot
+            pan to loosen the browned bits of food stuck to the bottom?
+          </p>
+          <select id="q9">
+            <option value="A">A. Deglazing</option>
+            <option value="B">B. Reducing</option>
+            <option value="C">C. Blanching</option>
+            <option value="D">D. Caramelizing</option>
+          </select>
+        </fieldset>
+        <br /><br />
+        <button type="button" onclick="quiz()">Check Your Knowledge</button>
+      </form>
+
+      <div id="quiz-result">
+        <p>Congratulations on completeing our quiz!</p>
+        <p id="quiz-score"></p>
+        <p id="quiz-message"></p>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Cooking Quote of the Day</h3>
+      <p id="footer-quote"></p>
+    </footer>
+    <script>
+      setAccount();
+      addQuote();
+    </script>
+  </body>
+</html>
